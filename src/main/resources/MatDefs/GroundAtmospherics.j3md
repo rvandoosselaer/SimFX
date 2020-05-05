@@ -22,8 +22,8 @@ MaterialDef Ground Atmospheric Scattering {
 
     Technique {
 
-        VertexShader GLSL110:   MatDefs/GroundAtmospherics.vert
-        FragmentShader GLSL110: MatDefs/GroundAtmospherics.frag
+        VertexShader GLSL310 GLSL300 GLSL100 GLSL150:   MatDefs/GroundAtmospherics.vert
+        FragmentShader GLSL310 GLSL300 GLSL100 GLSL150: MatDefs/GroundAtmospherics.frag
 
         WorldParameters {
             WorldViewProjectionMatrix

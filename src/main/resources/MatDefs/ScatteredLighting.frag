@@ -1,5 +1,7 @@
+#import "Common/ShaderLib/GLSLCompat.glsllib"
 #import "Common/ShaderLib/Parallax.glsllib"
 #import "Common/ShaderLib/Optics.glsllib"
+
 #define ATTENUATION
 //#define HQ_ATTENUATION
 

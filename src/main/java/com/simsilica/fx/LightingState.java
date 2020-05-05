@@ -38,6 +38,7 @@ package com.simsilica.fx;
 
 import com.jme3.app.Application;
 import com.jme3.app.SimpleApplication;
+import com.jme3.app.state.BaseAppState;
 import com.jme3.light.AmbientLight;
 import com.jme3.light.DirectionalLight;
 import com.jme3.math.ColorRGBA;
@@ -47,7 +48,6 @@ import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 import com.simsilica.lemur.core.VersionedHolder;
 import com.simsilica.lemur.core.VersionedReference;
-import com.simsilica.lemur.event.BaseAppState;
 
 /**
  *
@@ -161,14 +161,14 @@ public class LightingState extends BaseAppState {
     }
 
     @Override
-    protected void enable() {
+    protected void onEnable() {
         rootNode = ((SimpleApplication)getApplication()).getRootNode();
         rootNode.addLight(sun);
         rootNode.addLight(ambient);
     }
 
     @Override
-    protected void disable() {
+    protected void onDisable() {
         rootNode.removeLight(sun);
         rootNode.removeLight(ambient);
     }

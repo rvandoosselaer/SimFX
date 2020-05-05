@@ -1,4 +1,4 @@
-
+#import "Common/ShaderLib/GLSLCompat.glsllib"
 
 // Parameters required by the vert scattering
 uniform vec3 m_SunPosition;

@@ -1,4 +1,4 @@
-
+#import "Common/ShaderLib/GLSLCompat.glsllib"
 
 uniform float m_Exposure;
 

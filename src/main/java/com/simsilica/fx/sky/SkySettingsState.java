@@ -37,11 +37,11 @@
 package com.simsilica.fx.sky;
 
 import com.jme3.app.Application;
+import com.jme3.app.state.BaseAppState;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
 import com.simsilica.fx.LightingState;
 import com.simsilica.lemur.core.VersionedReference;
-import com.simsilica.lemur.event.BaseAppState;
 import com.simsilica.lemur.props.PropertyPanel;
 
 
@@ -120,10 +120,11 @@ public class SkySettingsState extends BaseAppState {
     }
 
     @Override
-    protected void enable() {
+    protected void onEnable() {
+
     }
 
     @Override
-    protected void disable() {
+    protected void onDisable() {
     }
 }
